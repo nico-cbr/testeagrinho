@@ -42,7 +42,7 @@
     position: absolute;
     font-size: 20px;
     cursor: pointer;
-    color: #3b3b3b;
+    color: var(--azul-escuro);
     top: 50%;
     transform: translateY(-50%);
 }
@@ -73,7 +73,7 @@
     display: inline-flex;
     text-decoration: none;
     text-transform: capitalize;
-    color: #3b3b3b;
+    color: var(--azul-escuro);
     padding: 5px 8px;
     border-radius: 10px;
 }
@@ -119,7 +119,7 @@
     text-align: center;
     top: 100px;
     border-radius: 50px;
-    color: #009cff;
+    color: var(--azul-claro);
     transition: 0.3s;
 }
 #check:checked ~ .navDesktop label #arrow{
@@ -182,12 +182,12 @@
     font-size: 1.3rem;
     margin: 8px 8px;
     cursor: pointer;
-    color: #494949;
+    color: var(--azul-escuro);
     transition: 0.3s ease-in-out;
 }
 
 .navDesktop .socialMedia .fab:hover{
-    color:  var(--azul-escuro);        
+    color:  var(--azul-claro);        
 }
 
 .navDesktop .socialMedia .fab::after{
