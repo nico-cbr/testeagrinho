@@ -19,7 +19,7 @@
 
 .versaoDesktop .topo small{
     margin-left: 10px;
-    color: rgb(82, 82, 82);
+    color: var(--azul-claro);
 }
 
 .versaoDesktop .topo h1{        

@@ -66,7 +66,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #c9ada7;
+    color: var(--azul-claro);
 }
 
 footer .footer-section p {
@@ -81,7 +81,7 @@ footer .footer-section p a {
 }
 
 footer .footer-section p a:hover {
-    color: #c9ada7;
+    color: var(--azul-claro);
 }
 
 ooter  #socialMedia{
