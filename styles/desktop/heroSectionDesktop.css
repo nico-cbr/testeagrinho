@@ -1,0 +1,62 @@
+@import url(./style.css);
+
+.versaoDesktop .heroSectionDesktop{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 220px;
+    transition: 0.3s ease-in-out;
+}
+
+.versaoDesktop .heroSectionDesktop .destaque{
+    margin: 50px;
+    font-size: 20px;
+}
+
+.versaoDesktop .heroSectionDesktop .destaque span{
+    color: var(--azul-escuro);
+}
+
+.versaoDesktop .heroSectionDesktop .destaque h3{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #a5a5a5;
+}
+
+.versaoDesktop .heroSectionDesktop .destaque p{
+    font-size:smaller;
+    margin-bottom: 30px;
+}
+
+.versaoDesktop .heroSectionDesktop .destaque h5{
+    width: 30%;
+    text-align: center;
+    /* border: 1px solid var(--azul-escuro); */
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--azul-escuro);
+    transition: 0.3s ease-in;
+}   
+
+.versaoDesktop .heroSectionDesktop .destaque a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.versaoDesktop .heroSectionDesktop .destaque h5:hover{
+    background: var(--azul-claro);
+}
+
+.versaoDesktop .heroSectionDesktop .imagemDestaque img{
+    margin: 40px 0 0 -150px;
+    width: 300px;
+    object-fit: fill;
+    transition: 0.5s ease-in-out;
+}
+
+#check:checked ~.heroSectionDesktop .imagemDestaque img{
+    margin: 40px 0 0 -120px;
+}
+
+#check:checked ~.heroSectionDesktop{
+    margin-left: 60px;        
+}    

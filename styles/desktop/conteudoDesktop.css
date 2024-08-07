@@ -1,0 +1,238 @@
+@import url(./style.css);
+
+.versaoDesktop .conteudoDesktop{
+    margin-left: 220px;
+    transition: 0.3s ease-in-out;
+}
+
+#check:checked ~.conteudoDesktop{
+    margin-left: 60px;        
+}
+
+.versaoDesktop .conteudoDesktop h1{
+    margin-left: 60px;
+}
+
+#check:checked ~.conteudoDesktop h1{
+    margin-left: 95px;
+}
+
+/* Social proof */
+
+.versaoDesktop .conteudoDesktop .provaSocial{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "1 2 3"
+    ;
+    margin: 5px;
+    margin-bottom: 45px;
+    gap: 10px;
+}
+
+.versaoDesktop .conteudoDesktop .provaSocial .card {
+    background-color: var(--azul-escuro);
+    padding: 2rem;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.versaoDesktop .conteudoDesktop .provaSocial .card .imagemItem{
+    display: grid;
+    grid-template-areas: 
+    "foto nome" 
+    "foto subtitulo";
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 2rem; */
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#check:checked ~ .conteudoDesktop .provaSocial .card .imagemItem h1{
+    margin-left: 0;
+}
+  
+.versaoDesktop .conteudoDesktop .provaSocial .card .imagemItem .foto{
+    grid-area: foto;
+    border-radius: 5rem;
+    width: 70px;
+    margin-right: 6px;
+}
+  
+.versaoDesktop .conteudoDesktop .provaSocial .card .imagemItem .nome{
+    color: var(--texto);
+    font-size: 18px;
+    grid-area: nome;
+    margin: 0px;
+}
+  
+.versaoDesktop .conteudoDesktop .provaSocial .card .imagemItem .subtitulo{
+    color: var(--azul-claro);
+    grid-area: subtitulo;
+    /* width: 20px; */
+    font-size: 12px;
+  }
+  
+  .versaoDesktop .conteudoDesktop .provaSocial .card .testemunho{
+    color: var(--texto);
+    line-height: 2rem;
+  }
+
+.versaoDesktop .conteudoDesktop .parceiros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "p1 p2 p3"
+    "p4 p5 p6"
+    ;
+    margin-left: 60px;
+    margin-right: 90px;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros img{
+    width: 30px;
+}
+
+#check:checked ~.conteudoDesktop .parceiros{
+    margin-left: 95px;
+    margin-right: 90px;
+    gap: 15px;        
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p1{
+    grid-area: p1;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;    
+    transition: 0.3s ease;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p1 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p1:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.versaoDesktop .conteudoDesktop .parceiros .p2{
+    grid-area: p2;        
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p2 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p2:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p3{
+    grid-area: p3;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p3 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p3:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p4{
+    grid-area: p4;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p4 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p4:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p5{
+    grid-area: p5;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p5 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p5:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.versaoDesktop .conteudoDesktop .parceiros .p6{
+    grid-area: p6;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p6 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoDesktop .conteudoDesktop .parceiros .p6:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}  
+
+
+
+  /* https://github.com/kerry-cp/social-proof-section-master/blob/main/css/styles.scss */
+  

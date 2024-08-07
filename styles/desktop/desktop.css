@@ -1,0 +1,13 @@
+@import url(./style.css);
+@import url(./styles/desktop/navDesktop.css);
+
+@media(min-width: 1024px){
+    .versaoMobile{
+        display: none;
+    }   
+    
+    .versaoDesktop{
+        height: 100vh;
+        display: block;        
+    }          
+}

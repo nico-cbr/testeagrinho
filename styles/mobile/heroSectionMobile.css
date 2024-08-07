@@ -1,0 +1,31 @@
+@import url(./style.css);
+
+.versaoMobile .heroSectionMobile {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-around;
+  font-size: 20px;
+  background-color: var(--azul-escuro);
+}
+
+.versaoMobile .heroSectionMobile .destaque{
+  margin: 0 10px 0 -30px;
+}
+
+.versaoMobile .heroSectionMobile .destaque h1{
+  color: var(--texto);
+}
+
+.versaoMobile .heroSectionMobile .destaque span{
+  color: var(--azul-claro);
+}
+
+.versaoMobile .heroSectionMobile .imagemDestaque img{
+  object-fit: fill;
+  height: 140px;
+  /* margin: 0 15px 0 -40px; */
+  margin: 0 50px 0 15px;
+}

@@ -1,0 +1,137 @@
+@import url(./style.css);
+
+.versaoMobile .upContent{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    height: 30px;
+    color: var(--texto-transparente);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 20px;
+    background-color: var(--azul-escuro);
+}
+
+.versaoMobile .navMobile{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.versaoMobile .navMobile .navContent{
+    margin: auto;
+    padding: 0 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--azul-escuro);
+    width: 100%;
+}
+
+.versaoMobile .navMobile .logo{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    text-decoration: none;
+    
+}
+
+.versaoMobile .navMobile .logoImg{
+    height: 50px;
+    margin: 0 5px 5px 0;
+}
+
+.versaoMobile .navMobile .logoText{
+    
+    color: var(--texto);
+    font-size: 20x;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.versaoMobile .navMobile .nav {
+    transition: all 0.4s ease-in-out;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    background-color: var(--azul-transparente);
+    backdrop-filter: blur(2.5px) ;
+    width: 100%;
+    padding: 10px 0 25px;
+    transform: translateX(-100%);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.versaoMobile .navMobile .navList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    row-gap: 20px;
+}
+
+/* .versaoMobile .navMobile .navItem{
+
+} */
+
+.versaoMobile .navMobile .navLink{
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.versaoMobile .navMobile .navLink:hover, 
+.versaoMobile .navMobile .navLink:focus{
+    color: var(--texto);
+}
+
+.versaoMobile .navMobile .btn{
+    color: var(--texto);
+    background-color: var(--azul);
+    padding: 7px 17px;
+    border-radius: 1000px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.versaoMobile .navMobile .btn:hover{
+    background-color: var(--azul-claro);
+}
+
+.versaoMobile .navMobile .hamburguer{
+    display: block;
+}
+
+.bar{
+    height: 2px;
+    width: 27px;
+    background-color: var(--texto);
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.4s ease-in-out;
+}
+
+/* classe pro JS */
+.navOpen{
+    transform: translateX(0%) !important;
+}
+
+.hamburguerOpen .bar:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburguerOpen .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburguerOpen .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+}

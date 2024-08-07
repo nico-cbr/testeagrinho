@@ -1,0 +1,135 @@
+@import url(./style.css);
+
+.versaoDesktop .sobreDesktop{
+    margin-left: 220px;
+    transition: 0.3s ease-in-out;
+}
+
+.versaoDesktop .sobreDesktop .conteudo {
+    margin: 100px 60px 30px 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+#check:checked ~.sobreDesktop{
+    margin-left: 60px;        
+}
+
+.versaoDesktop .sobreDesktop .conteudo p{
+    margin: 20px 0 0 30px;
+}
+
+.versaoDesktop .sobreDesktop .conteudo .texto{
+   min-width: 350px;
+   font-size: 18px;
+}
+
+.versaoDesktop .sobreDesktop .conteudo .texto h1{
+    font-size: 3.5rem;
+    margin: 0px 0px 0px 25px;
+    color: var(--azul-escuro);
+}
+.versaoDesktop .sobreDesktop .conteudo .texto h2{
+    font-size: 1.5rem;
+    margin: -10px 0px 0px 25px;
+}
+
+.versaoDesktop .sobreDesktop .conteudo img{
+    height: 350px;
+    border-radius: 15px;
+    margin-left: 50px ;
+}
+
+/* cards */
+.versaoDesktop .sobreDesktop .provaSocial{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "1 2 3"
+    ;
+    margin: 5px;
+    margin-bottom: 45px;
+}
+
+.versaoDesktop .sobreDesktop .provaSocial .card {
+    background-color: var(--azul-escuro);
+    padding: 2rem;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.versaoDesktop .sobreDesktop .provaSocial .card .imagemItem{
+    display: grid;
+    grid-template-areas: 
+    "foto nome" 
+    "foto subtitulo";
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 2rem; */
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#check:checked ~ .sobreDesktop .provaSocial .card .imagemItem h1{
+    margin-left: 0;
+}
+
+
+.versaoDesktop .sobreDesktop .provaSocial .card .imagemItem .foto{
+    grid-area: foto;
+    /* border-radius: 5rem; */
+    width: 70px;
+    margin-right: 6px;
+}
+  
+.versaoDesktop .sobreDesktop .provaSocial .card .imagemItem .nome{
+    color: var(--texto);
+    font-size: 18px;
+    grid-area: nome;
+    margin: 0px;
+}
+  
+.versaoDesktop .sobreDesktop .provaSocial .card .imagemItem .subtitulo{
+    color: var(--azul-claro);
+    grid-area: subtitulo;
+    /* width: 20px; */
+    font-size: 12px;
+  }
+  
+  .versaoDesktop .sobreDesktop .provaSocial .card .testemunho{
+    color: var(--texto);
+    line-height: 2rem;
+  }
+
+
+  /* media query */
+
+@media (max-width: 1024px) {
+    .versaoDesktop .sobreDesktop .conteudo{
+    flex-direction: column;
+    margin: 50px 30px 15px 10px;
+    }
+
+    .versaoDesktop .sobreDesktop .conteudo .texto h1{
+        font-size: 2.9rem;
+        margin: 50px 0px 0px 25px;
+        color: var(--azul-escuro);
+        text-align: center;
+    }
+
+    .versaoDesktop .sobreDesktop .conteudo .texto h2{
+        font-size: 1.5rem;
+        margin: -10px 0px 0px 25px;
+        text-align: center;
+    }
+
+    .versaoDesktop .sobreDesktop .conteudo p{
+        font-size: 20px;
+    }
+
+    .versaoDesktop .sobreDesktop .conteudo img{
+        margin-top: 40px;
+    }
+}

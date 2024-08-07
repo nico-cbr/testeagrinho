@@ -1,0 +1,126 @@
+@import url(./style.css);
+
+.versaoMobile .conteudoMobile .conteudo{
+ margin-top: 65px;   
+ margin-bottom: 20px; 
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.versaoMobile .conteudoMobile .conteudo .titulo{
+    margin-left: 15px;
+    
+}
+
+.versaoMobile .conteudoMobile .conteudo img{
+    width: 8rem;   
+    height: 8rem;
+    border-radius: 10px; 
+    margin-right: 3%;    
+}
+
+.versaoMobile .conteudoMobile .conteudo .titulo h1{    
+    font-size:30px;
+    line-height: 25px;    
+}
+
+.versaoMobile .conteudoMobile .conteudo .titulo h2{    
+    font-size:15px;
+    line-height: 25px;
+    color: var(--azul-transparente);
+}
+.versaoMobile .conteudoMobile .texto {
+    margin-bottom: 40px;
+}
+
+.versaoMobile .conteudoMobile .texto p{
+    margin: 20px;    
+}
+
+/* .versaoMobile .conteudoMobile .conteudo .texto .titulo h1{
+    
+}
+.versaoMobile .conteudoMobile .conteudo .texto .tiitulo h2{
+    
+}
+
+.versaoMobile .conteudoMobile .conteudo .texto .imagem img{
+    
+} */
+
+
+/* cards */
+.versaoMobile .conteudoMobile .provaSocial{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3"
+    ;
+    gap: 10px;
+    margin: 5px;
+    margin-bottom: 45px;
+    margin-top: 25px;
+}
+
+.versaoMobile .conteudoMobile .provaSocial .card {
+    background-color: var(--azul-escuro);
+    padding: 2rem;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.versaoMobile .conteudoMobile .provaSocial .card .imagemItem{
+    display: grid;
+    grid-template-areas: 
+    "foto nome" 
+    "foto subtitulo";
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 2rem; */
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+.versaoMobile .conteudoMobile .provaSocial .card .imagemItem .foto{
+    grid-area: foto;
+    /* border-radius: 5rem; */
+    width: 70px;
+    margin-right: 6px;
+}
+  
+.versaoMobile .conteudoMobile .provaSocial .card .imagemItem .nome{
+    color: var(--texto);
+    font-size: 18px;
+    grid-area: nome;
+    margin: 0px;
+}
+  
+.versaoMobile .conteudoMobile .provaSocial .card .imagemItem .subtitulo{
+    color: var(--azul-claro);
+    grid-area: subtitulo;
+    /* width: 20px; */
+    font-size: 12px;
+}
+  
+  .versaoMobile .conteudoMobile .provaSocial .card .testemunho{
+    color: var(--texto);
+    line-height: 2rem;
+}
+
+  @media (max-width: 1024px) {
+    .versaoMobile .conteudoMobile .conteudo .texto .titulo{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "txt imagem"
+        ;
+        margin-bottom: 10px;
+        width: 330px;
+    }
+  }

@@ -1,0 +1,56 @@
+@import url(./styles/desktop/navDesktop.css);
+@import url(./style.css);
+
+.versaoDesktop .topo{  
+    display: flex;               
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 220px;
+    background: var(--azul-escuro);
+    transition: 0.3s ease-in-out;
+}
+
+#check:checked ~.topo{         
+    margin-left: 60px;        
+    background: var(--azul-escuro);
+    
+}
+
+.versaoDesktop .topo small{
+    margin-left: 10px;
+    color: rgb(82, 82, 82);
+}
+
+.versaoDesktop .topo h1{        
+    line-height: 15px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    color: var(--texto);
+}
+
+.versaoDesktop .textoTopo{
+    text-align: left;
+}
+
+.versaoDesktop .user{
+    display: flex;             
+    margin-right: 30px;
+    color: #fff;        
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.versaoDesktop .user:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: var(--azul-claro);  
+}
+
+.versaoDesktop .user p{
+    margin-right: 10px;
+}
+
+

@@ -1,0 +1,243 @@
+@import url(./style.css);
+
+/* .versaoMobile .conteudoMobile {
+    margin: 10px 0;
+} */
+
+/* Estilizando social proof */
+
+.versaoMobile .conteudoMobile .social{
+    margin: 15px 0px;
+    height: 300px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.versaoMobile .conteudoMobile .socialLista{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 5px;
+}
+
+.versaoMobile .conteudoMobile .socialLista .listaItem{
+    width: 120px;
+    padding: 2px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding: 10px; */
+}
+
+.versaoMobile .conteudoMobile .socialLista .listaItem .infoItem{
+    width: 100%; 
+    height: 90px;
+}
+.versaoMobile .conteudoMobile .socialLista .listaItem .infoItem p{
+    font-size: 14px;
+}
+
+.versaoMobile .conteudoMobile .socialLista .listaItem a{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--azul);
+    cursor: pointer;
+}
+
+.versaoMobile .conteudoMobile .socialLista .listaItem .imagemItem{
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.versaoMobile .conteudoMobile .socialLista .listaItem .imagemItem img{
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* estlizando Parceiros */
+
+.versaoMobile .conteudoMobile .parceiros{
+    background-color: var(--azul-escuro);
+    padding: 40px;
+    font-size: 16px;
+    color: var(--texto);
+}
+
+.versaoMobile .conteudoMobile .parceiros .acesseParceiros h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.versaoMobile .conteudoMobile .parceiros .acesseParceiros article{
+    letter-spacing: 5.5;
+    margin-bottom: 40px;
+}
+
+.versaoMobile .conteudoMobile .parceiros .acesseParceiros a{
+    text-decoration: none;
+    background-color: var(--texto);
+    color: #000;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.versaoMobile .conteudoMobile .parceiros .acesseParceiros a img{
+    margin: 20px 0 0 8px;
+    width: 12px;
+}
+
+/* Estilizando produtos parceiros */
+
+.versaoMobile .conteudoMobile .produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "p1 p2"
+    "p3 p4"
+    "p5 p6"
+    ;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 4rem;
+    gap: 10px;
+}
+
+.versaoMobile .conteudoMobile .frase{
+    font-size: 1.6em;
+    margin: 4rem  0 10px 1.5rem;
+}
+
+.versaoMobile .conteudoMobile .produtos img {
+    width: 30px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p1{
+    grid-area: p1;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.versaoMobile .conteudoMobile .produtos .p1 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p1:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.versaoMobile .conteudoMobile .produtos .p2{
+    grid-area: p2;        
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.versaoMobile .conteudoMobile .produtos .p2 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p2:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p3{
+    grid-area: p3;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.versaoMobile .conteudoMobile .produtos .p3 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p3:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p4{
+    grid-area: p4;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.versaoMobile .conteudoMobile .produtos .p4 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p4:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p5{
+    grid-area: p5;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.versaoMobile .conteudoMobile .produtos .p5 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p5:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.versaoMobile .conteudoMobile .produtos .p6{
+    grid-area: p6;
+    text-align: center;
+    background: var(--fundo-prod);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.versaoMobile .conteudoMobile .produtos .p6 p{
+    font-weight:600;
+    padding: 5px;
+}
+
+.versaoMobile .conteudoMobile .produtos .p6:hover{
+    background: var(--azul-claro);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}    

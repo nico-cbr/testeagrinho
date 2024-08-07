@@ -1,0 +1,204 @@
+@import url(./style.css);
+
+.versaoDesktop .navDesktop{        
+    width: 100%; 
+    height: 100%;   
+    min-height: 100%;
+    max-width: 220px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.versaoDesktop .navDesktop .imgbox{
+    position: relative;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 20px;        
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.versaoDesktop .navDesktop .navBar{
+    width: 100%;
+    padding:0 10px;
+    list-style: none;
+}
+
+.versaoDesktop .navDesktop .navBar .buscaBox{
+    position: relative;
+    width: 100%;
+    background: #d6d6d6;
+    padding: 10px;
+    border-radius: 10px;        
+}
+
+.navDesktop .buscaBox .fa-search{
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    color: #3b3b3b;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navDesktop .buscaBox:hover .fa-search{
+    color: var(--azul-escuro);
+}
+
+.navDesktop .navBar .buscaBox input{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-left: 30px;
+    font-size: 18px;
+    color: #000;
+    background: none;
+    overflow: hidden;
+}
+
+.navDesktop .navBar li{
+    width: 100%;
+    display: inline-flex;
+    margin: 5px 0;        
+}
+
+.navDesktop .navBar li a{
+    width: 100%;
+    display: inline-flex;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #3b3b3b;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.navDesktop .navBar li:hover a{
+    background: var(--azul-claro);
+    color: #fff;
+}
+
+.navDesktop .navBar li a i{
+    margin: auto 0;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+}
+
+.navDesktop .navBar li a p{
+    font-size: 20px;
+    transform: scale(1);
+    transform-origin: left;
+    transition: 0.3s;        
+}
+
+#check:checked ~ .navDesktop .navBar li a p{
+    transform: scale(0);
+}
+
+/* ------Botão de esconder------- */
+.versaoDesktop .hide{
+    display: none;
+    visibility: hiden;
+}
+
+.navDesktop label #arrow{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    right: -15px;
+    font-size: 25px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    text-align: center;
+    top: 100px;
+    border-radius: 50px;
+    color: #009cff;
+    transition: 0.3s;
+}
+#check:checked ~ .navDesktop label #arrow{
+    transform: rotate(180deg);        
+}
+
+#check:checked ~ .navDesktop{
+    max-width: 60px;
+}
+#check:checked ~ .navDesktop .imgbox img{
+    display: none;
+}
+
+/* ------Tips mensagens-------- */
+.navDesktop .navBar li span{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px 8px;
+    text-transform: capitalize;
+    color: var(--azul);
+    transition: 0.2s;
+    transform: translateX(100px);
+    left: 80px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    visibility: hidden;
+    opacity: 0;
+}   
+
+#check:checked ~ .navDesktop .navBar li:hover span{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-12px);
+}
+
+.navDesktop .navBar li span:before{
+    position: absolute;
+    content: '';
+    border: 8px solid #fff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navDesktop .socialMedia{
+    position: absolute;
+    width: 100%;
+    bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;        
+}
+
+.navDesktop .socialMedia .fab{
+    position: relative;
+    font-size: 1.3rem;
+    margin: 8px 8px;
+    cursor: pointer;
+    color: #494949;
+    transition: 0.3s ease-in-out;
+}
+
+.navDesktop .socialMedia .fab:hover{
+    color:  var(--azul-escuro);        
+}
+
+.navDesktop .socialMedia .fab::after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;        
+}
+
+.navDesktop .socialMedia .fab:hover::after{
+    background: red;
+}    
